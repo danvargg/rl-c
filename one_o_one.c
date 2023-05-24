@@ -3,12 +3,11 @@
 #include <stdio.h>
 
 int main() {
-    int age;
+    int age = 30;
+    int a = 8;
     char x, y, z;
-
-    age = 30;
-
     char password[] = "spatula";
+    char k = 'b';
 
     puts("Wait, what?");
     printf("More %d %d\n", 27, age + 1);
@@ -16,5 +15,24 @@ int main() {
     printf("Char: %c %c %c\n", 'a', 'b', 'c');
     printf("The password is %s\n", password);
 
-    return 0;
+    if (a >= 10) {
+        printf("%d", a);
+    } else if (a < 10) {
+        printf("%d\n", a);
+    } else {
+        printf("Wrong!");
+    }
+
+    switch(k) {
+        case 'a':
+            printf("A\n");
+            break;
+        case 'b':
+            printf("B\n");
+            break;
+        default:
+            printf("C\n");
+    }
+
+    return (0);
 }
